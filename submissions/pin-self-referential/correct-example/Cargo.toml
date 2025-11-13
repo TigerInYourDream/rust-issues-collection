@@ -1,0 +1,15 @@
+[package]
+name = "pin-self-referential-correct"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pin-project = "1.1"
+tokio = { version = "1.48", features = ["io-util", "rt", "macros"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
+futures = "0.3"
+
+[profile.release]
+opt-level = 2

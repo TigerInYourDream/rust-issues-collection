@@ -1,0 +1,16 @@
+[package]
+name = "tokio-runtime-sharing-broken"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Alvin"]
+description = "Demonstrates the problems with Arc and Mutex approaches for sharing Tokio Runtime"
+
+[dependencies]
+tokio = { version = "1.47.1", features = ["full"] }
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.11"
+
+[dev-dependencies]
+tokio-test = "0.4"

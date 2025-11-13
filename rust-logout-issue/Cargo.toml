@@ -1,0 +1,24 @@
+[package]
+name = "rust-logout-issue"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Rust Issue Contributor"]
+description = "Demonstrates tokio runtime shutdown issue with async tasks (deadpool-runtime panic)"
+
+[dependencies]
+tokio = { version = "1.47.1", features = ["full"] }
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.11"
+
+[dev-dependencies]
+tokio-test = "0.4"
+
+[[bin]]
+name = "problem"
+path = "src/problem.rs"
+
+[[bin]]
+name = "solution"
+path = "src/solution.rs"

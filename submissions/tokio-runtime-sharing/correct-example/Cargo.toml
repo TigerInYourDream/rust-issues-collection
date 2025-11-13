@@ -1,0 +1,17 @@
+[package]
+name = "tokio-runtime-sharing-correct"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Alvin"]
+description = "Demonstrates the correct approach for sharing Tokio Runtime with controlled shutdown"
+
+[dependencies]
+tokio = { version = "1.47.1", features = ["full"] }
+tokio-util = "0.7"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.11"
+
+[dev-dependencies]
+tokio-test = "0.4"

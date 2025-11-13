@@ -1,0 +1,10 @@
+[package]
+name = "pin-self-referential-broken"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# No dependencies needed for demonstrating the problem
+
+[profile.release]
+opt-level = 2
